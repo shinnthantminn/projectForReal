@@ -1,0 +1,15 @@
+[
+    {
+    "relation": [
+        "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.panntheefoundation",
+            "sha256_cert_fingerprints": [
+                "52:8A:49:FF:1D:F1:39:AC:DE:5A:84:86:AA:28:61:C9:29:90:BC:CE:AE:A0:45:71:35:38:F6:FC:ED:5D:EF:B6",
+                "F2:68:EF:29:6D:B6:25:62:68:35:89:4D:1E:DA:69:F0:68:83:12:A5:51:7E:0A:B2:09:87:D6:00:4D:2E:9D:4D"
+            ]
+        }   
+    }
+]

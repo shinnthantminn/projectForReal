@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_navigation_margin_top_active">8dp</dimen>
+    <dimen name="bottom_navigation_margin_top_inactive">8dp</dimen>
+
+</resources>

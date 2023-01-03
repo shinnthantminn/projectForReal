@@ -1,0 +1,14 @@
+rootProject.name = 'panntheefoundation'
+include ':react-native-exit-app'
+project(':react-native-exit-app').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-exit-app/android')
+include ':react-native-text-size'
+project(':react-native-text-size').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-text-size/android')
+include ':react-native-navigation'
+project(':react-native-navigation').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-navigation/lib/android/app')
+include ':react-native-prevent-screenshot'
+project(':react-native-prevent-screenshot').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-prevent-screenshot/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+project(':react-native-video').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-video/android-exoplayer')
+include ':app'
+startParameter.excludedTaskNames += ':react-native-navigation:testReactNative63DebugUnitTest'
+startParameter.excludedTaskNames += ':react-native-navigation:testReactNative63ReleaseUnitTest'

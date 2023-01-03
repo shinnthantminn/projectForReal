@@ -1,0 +1,69 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext {
+        buildToolsVersion = "30.0.2"
+        minSdkVersion = 23
+        compileSdkVersion = 33
+        targetSdkVersion = 33
+        ndkVersion = "21.4.7075529"
+        // for react native navigation
+        kotlinVersion = "1.5.31" // Or any version above 1.4.x
+        RNNKotlinVersion = kotlinVersion
+        // for netinfo
+//        supportLibVersion = "26.1.0"
+        androidXCore = "1.6.0"
+    }
+    repositories {
+        google()
+        jcenter()
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:4.1.0")
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$RNNKotlinVersion"
+
+        // if (project.hasProperty('ENABLE_GOOGLE_ANALYTICS')) {
+            classpath('com.google.gms:google-services:4.3.10')
+        // }
+    }
+}
+
+allprojects {
+    repositories {
+        exclusiveContent {
+            filter {
+                includeGroup "com.facebook.react"
+            }
+            forRepository {
+                maven {
+                    url "$rootDir/../node_modules/react-native/android"
+                }
+            }
+        }
+
+        google()
+        mavenLocal()
+        mavenCentral()
+        maven {
+            // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+            url("$rootDir/../node_modules/react-native/android")
+        }
+        maven {
+            // Android JSC is installed from npm
+            url("$rootDir/../node_modules/jsc-android/dist")
+        }
+        maven {
+            // All of Detox' artifacts are provided via the npm module
+            url "$rootDir/../node_modules/detox/Detox-android"
+        }
+        jcenter()
+        maven { 
+            url 'https://www.jitpack.io'
+        }
+
+    }
+}

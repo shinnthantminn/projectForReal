@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "606679861698",
+    "project_id": "pannthee-c3cdb",
+    "storage_bucket": "pannthee-c3cdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606679861698:android:9d9e4ad2b786bd5089ee5b",
+        "android_client_info": {
+          "package_name": "com.panntheefoundation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606679861698-hli7o9n0rbqp879er3p26ic6pq7ua0cf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.panntheefoundation",
+            "certificate_hash": "3ebf0ccb659fa1f3cdb5240f1dbf34389ffecab8"
+          }
+        },
+        {
+          "client_id": "606679861698-olle41j0s98i2ali0drtrf4kq1n6hcqr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.panntheefoundation",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "606679861698-uc6hv56p9k3md46g64rqg89lt577ejeo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY6ZBOBWTQB3Gs9fNb9rkv6Vo3Upq64Kw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606679861698-uc6hv56p9k3md46g64rqg89lt577ejeo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "606679861698-k5emqt2gjrsqhkvuou422apa7a8iifq6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.panntheefoundation1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
